@@ -29,17 +29,19 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
         
+        hockeyapp.start(null, null, '0b7c4d1939a64570a2bd4b38732d1e0e', true);
+        
         //ANONYMOUS
-        hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "ad126b9e0a484ed68cbef3d61ce0b1e6");
+        //hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "");
 
         //EMAIL_PASSWORD
-        //hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "ad126b9e0a484ed68cbef3d61ce0b1e6", false, false, hockeyapp.loginMode.EMAIL_PASSWORD);
+        //hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "", false, false, hockeyapp.loginMode.EMAIL_PASSWORD);
 
         //EMAIL_ONLY
-        //hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "ad126b9e0a484ed68cbef3d61ce0b1e6", false, false, hockeyapp.loginMode.EMAIL_ONLY, "dedfae48d85a1bc1232ea7a8f4603860");
+        //hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "", false, false, hockeyapp.loginMode.EMAIL_ONLY, "dedfae48d85a1bc1232ea7a8f4603860");
         
         //VALIDATE
-        //hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "ad126b9e0a484ed68cbef3d61ce0b1e6", false, false, hockeyapp.loginMode.VALIDATE);
+        //hockeyapp.start(this.onHockyeSDKSuccess, this.onHockyeSDKFailure, "", false, false, hockeyapp.loginMode.VALIDATE);
 
     },
 
